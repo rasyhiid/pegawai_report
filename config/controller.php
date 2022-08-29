@@ -72,6 +72,28 @@ function delete_data($id)
     return mysqli_affected_rows($db);
 }
 
+//Menambah data Pegawai
+function create_pegawai($post)
+{
+    global $db;
+
+    $nip_nik    = $post['nip_nik'];
+    $nama       = $post['nama'];
+    $jabatan    = $post['jabatan'];
+    $gol_ruang  = $post['gol_ruang'];
+    $bid_tugas  = $post['bid_tugas'];
+    $email      = $post['email'];
+    $foto       = $post['foto'];
+
+    //query tambah data
+
+    $query = "INSERT INTO pegawai VALUES(null, '$nip_nik','$nama','$jabatan','$gol_ruang','$bid_tugas','$email','$foto')";
+
+    mysqli_query($db, $query);
+
+    return mysqli_affected_rows($db);
+}
+
 ?>
 
 

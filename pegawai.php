@@ -36,6 +36,7 @@ $data_pegawai = select("SELECT * FROM pegawai ORDER BY id DESC");
                         <td><?= $pegawai['nama']; ?></td>
                         <td><?= $pegawai['jabatan']; ?></td>
                         <td><?= $pegawai['gol_ruang']; ?></td>
+                        <td><?= $pegawai['bid_tugas']; ?></td>
                         <td class="text-center" width="20%">
                             <a href="detail_pegawai.php?id=<?= $pegawai['id'];?>" class="btn btn-secondary btn-sm">Detail</a>
                             <a href="" class="btn btn-success btn-sm">Ubah</a>
