@@ -8,13 +8,13 @@ if (isset($_POST['tambah'])){
     if (create_pegawai($_POST) > 0){
         echo "<script>
             alert('Data Pegawai Berhasil Ditambahkan');
-            document.location.href = 'pegawai.php';
+            document.location.href = 'detail_pegawai.php';
             </script>";
         
     } else{
         echo "<script>
             alert('Data Pegawai Gagal Ditambahkan');
-            document.location.href = 'pegawai.php';
+            document.location.href = 'detail_pegawai.php';
             </script>";
     }
 }

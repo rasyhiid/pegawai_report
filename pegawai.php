@@ -24,6 +24,7 @@ $data_pegawai = select("SELECT * FROM pegawai ORDER BY id DESC");
                     <th>Nama</th>
                     <th>Jabatan</th>
                     <th>Golongan Ruang</th>
+                    <th>Bidang Tugas</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
