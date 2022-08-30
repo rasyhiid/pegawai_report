@@ -14,7 +14,7 @@ if (isset($_POST['tambah'])){
     } else{
         echo "<script>
             alert('Data Pegawai Gagal Ditambahkan');
-            document.location.href = 'depegawai.php';
+            document.location.href = 'pegawai.php';
             </script>";
     }
 }
@@ -55,7 +55,7 @@ if (isset($_POST['tambah'])){
                     <option value="Pegawai Non PNS">Pegawai Non PNS</option>
                 </select>
             </div> 
-            
+            <!--
             <div class="mb-3 col-6">
                 <label for="bid_tugas" class="bid_tugas">Bidang Tugas</label>
                 <select name="bid_tugas" id="bid_tugas" class="form-control" required>
@@ -65,7 +65,7 @@ if (isset($_POST['tambah'])){
                     <option value="Sub Bidang Repositori">Sub Bidang Repositori</option>
                 </select>
             </div>
-            <!--
+            
             <div class="mb-3 col-6">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
